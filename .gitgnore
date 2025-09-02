@@ -1,0 +1,35 @@
+# Ignore Python virtual environments except 'venv'
+# Ignore all folders named 'env', '.env', 'venv*' except 'venv'
+
+# Ignore common virtual environment folders
+env/
+ignore/
+.env/
+venv*/
+!venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# MacOS files
+.DS_Store
+
+# Logs
+*.log
+
+# System files
+Thumbs.db

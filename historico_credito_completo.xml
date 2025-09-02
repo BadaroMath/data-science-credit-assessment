@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <EnvoHstCrd>
+        <!-- Cabeçalho obrigatório -->
+        <CnpjIf>12.345.678/0001-99</CnpjIf>
+        <CnpjGbd>98.765.432/0001-11</CnpjGbd>
+        <NrRms>1234567</NrRms>
+        <SeqlRms>001</SeqlRms>
+        <DtRms>2024-01-15</DtRms>
+        <DtRefBaseItno>2024-01-01</DtRefBaseItno>
+        <FmtRms>XML</FmtRms>
+        <CdOcr>001</CdOcr>
+        
+        <!-- Cliente 1 - Pessoa Física -->
+        <Cli>
+            <TipCli>F</TipCli>
+            <IdfcCli>123.456.789-00</IdfcCli>
+            <NmCli>João da Silva</NmCli>
+            <NtzRlc>TITULAR</NtzRlc>
+            <CmdoCli>I</CmdoCli>
+            
+            <!-- Operação 1 - Crédito Pessoal -->
+            <Opr>
+                <NrUnco>123456789</NrUnco>
+                <PrfAg>1234</PrfAg>
+                <NrCtr>9876543210</NrCtr>
+                <DtCtrc>2023-06-15</DtCtrc>
+                <CdMdld>001</CdMdld>
+                <DtAprc>2024-01-01</DtAprc>
+                <CnpjCtrc>12.345.678/0001-99</CnpjCtrc>
+                <CmdoOpr>I</CmdoOpr>
+                <IdfcCliCtrt>123.456.789-00</IdfcCliCtrt>
+                <TipRst>SEM_RESTRICAO</TipRst>
+                
+                <!-- Detalhes da Operação -->
+                <DetOpr>
+                    <InPreFix>N</InPreFix>
+                    <DtVnctUltPcl>2025-06-15</DtVnctUltPcl>
+                    <VlCtrdFut>50000.00</VlCtrdFut>
+                    <QtPcl>24</QtPcl>
+                    <NrPlstCrt>1234567890123456</NrPlstCrt>
+                    <SdoDvdr>25000.00</SdoDvdr>
+                    <DtVnctOpr>2025-06-15</DtVnctOpr>
+                    <NrGr>001</NrGr>
+                    <CdCt>123</CdCt>
+                    <SeqCt>01</SeqCt>
+                    <SitCt>ATIVA</SitCt>
+                    <VlObgc>60000.00</VlObgc>
+                    <DtVnctUltPclCsr>2025-12-15</DtVnctUltPclCsr>
+                    <QtPclCtCsr>36</QtPclCtCsr>
+                    <SdoDvdrCtCsr>30000.00</SdoDvdrCtCsr>
+                    <DtContCtCsr>2024-06-15</DtContCtCsr>
+                </DetOpr>
+                
+                <!-- Parcelas Anteriores -->
+                <PclAnt>
+                    <DtVnctPclAnt>2023-12-15</DtVnctPclAnt>
+                    <PercPclAnt>MENSAL</PercPclAnt>
+                    <VlPclAnt>2500.00</VlPclAnt>
+                    <CmdoPclAnt>I</CmdoPclAnt>
+                    <PgtoPclAnt>
+                        <DtPgtoPclAnt>2023-12-15</DtPgtoPclAnt>
+                        <VlPgtoPclAnt>2500.00</VlPgtoPclAnt>
+                    </PgtoPclAnt>
+                    <PgtoPclAnt>
+                        <DtPgtoPclAnt>2023-12-16</DtPgtoPclAnt>
+                        <VlPgtoPclAnt>100.00</VlPgtoPclAnt>
+                    </PgtoPclAnt>
+                </PclAnt>
+                
+                <PclAnt>
+                    <DtVnctPclAnt>2024-01-15</DtVnctPclAnt>
+                    <PercPclAnt>MENSAL</PercPclAnt>
+                    <VlPclAnt>2500.00</VlPclAnt>
+                    <CmdoPclAnt>I</CmdoPclAnt>
+                    <PgtoPclAnt>
+                        <DtPgtoPclAnt>2024-01-15</DtPgtoPclAnt>
+                        <VlPgtoPclAnt>2500.00</VlPgtoPclAnt>
+                    </PgtoPclAnt>
+                </PclAnt>
+                
+                <!-- Pagamentos Avulsos -->
+                <PgtoAvls>
+                    <DtPgtoAvls>2024-01-10</DtPgtoAvls>
+                    <VlPgtoAvls>1000.00</VlPgtoAvls>
+                    <TipPgtoAvls>ANTECIPACAO</TipPgtoAvls>
+                    <CmdoPgtoAvls>I</CmdoPgtoAvls>
+                </PgtoAvls>
+                
+                <PgtoAvls>
+                    <DtPgtoAvls>2024-01-20</DtPgtoAvls>
+                    <VlPgtoAvls>500.00</VlPgtoAvls>
+                    <TipPgtoAvls>PARCIAL</TipPgtoAvls>
+                    <CmdoPgtoAvls>I</CmdoPgtoAvls>
+                </PgtoAvls>
+                
+                <!-- Parcelas Futuras -->
+                <PclFut>
+                    <DtVnctPrxPcl>2024-02-15</DtVnctPrxPcl>
+                    <PercPclFut>MENSAL</PercPclFut>
+                    <VlPrxPcl>2500.00</VlPrxPcl>
+                    <QtPclVncr>22</QtPclVncr>
+                    <QtPclPgr>22</QtPclPgr>
+                </PclFut>
+                
+                <!-- Faturas Fechadas Anteriores -->
+                <FatFchdAnt>
+                    <DtVnctFatFchdAnt>2023-11-30</DtVnctFatFchdAnt>
+                    <VlTtlPgrFatFchdAnt>3000.00</VlTtlPgrFatFchdAnt>
+                    <VlMinPgrFatFchdAnt>300.00</VlMinPgrFatFchdAnt>
+                    <CmdoFatFchdAnt>I</CmdoFatFchdAnt>
+                    <PgtoFatFchdAnt>
+                        <DtPgtoFatFchdAnt>2023-11-30</DtPgtoFatFchdAnt>
+                        <VlPgtoFatFchdAnt>3000.00</VlPgtoFatFchdAnt>
+                    </PgtoFatFchdAnt>
+                </FatFchdAnt>
+                
+                <!-- Faturas Fechadas Futuras -->
+                <FatFchdFut>
+                    <DtVnctFatFchdFut>2024-02-29</DtVnctFatFchdFut>
+                    <VlTtlPgrFatFchdFut>3200.00</VlTtlPgrFatFchdFut>
+                    <VlMinPgrFatFchdFut>320.00</VlMinPgrFatFchdFut>
+                    <CmdoFatFchFut>I</CmdoFatFchFut>
+                </FatFchdFut>
+                
+                <!-- Fechamentos Anteriores -->
+                <FchtAnt>
+                    <DtFchtAnt>2023-12-31</DtFchtAnt>
+                    <SdoUtlzFchtAnt>15000.00</SdoUtlzFchtAnt>
+                    <CmdoFchtAnt>I</CmdoFchtAnt>
+                </FchtAnt>
+                
+                <!-- Fechamentos Atuais -->
+                <FchtAtu>
+                    <DtFchtAtu>2024-01-31</DtFchtAtu>
+                    <SdoUtlzFchtAtu>18000.00</SdoUtlzFchtAtu>
+                    <CmdoFchtAtu>I</CmdoFchtAtu>
+                </FchtAtu>
+                
+                <!-- Parcelas Anteriores Consórcio -->
+                <PclAntCsr>
+                    <DtVnctPclAntCsr>2023-11-15</DtVnctPclAntCsr>
+                    <PercPclAntCsr>MENSAL</PercPclAntCsr>
+                    <VlPclAntCsr>800.00</VlPclAntCsr>
+                    <CmdoPclAntCsr>I</CmdoPclAntCsr>
+                    <PgtoPclAntCsr>
+                        <DtPgtoPclAntCsr>2023-11-15</DtPgtoPclAntCsr>
+                        <VlPgtoPclAntCsr>800.00</VlPgtoPclAntCsr>
+                    </PgtoPclAntCsr>
+                </PclAntCsr>
+                
+                <!-- Pagamentos Avulsos Consórcio -->
+                <PgtoAvlsCsr>
+                    <DtPgtoAvlsCsr>2024-01-05</DtPgtoAvlsCsr>
+                    <VlPgtoAvlsCsr>2000.00</VlPgtoAvlsCsr>
+                    <TipPgtoAvlsCsr>LANCE</TipPgtoAvlsCsr>
+                    <CmdoPgtoAvlsCsr>I</CmdoPgtoAvlsCsr>
+                </PgtoAvlsCsr>
+                
+                <!-- Parcelas Futuras Consórcio -->
+                <PclFutCsr>
+                    <DtVnctPrxPclCsr>2024-02-15</DtVnctPrxPclCsr>
+                    <PercPclFutCsr>MENSAL</PercPclFutCsr>
+                    <VlPrxPclCsr>800.00</VlPrxPclCsr>
+                    <QtPclVncrCsr>34</QtPclVncrCsr>
+                    <QtPclPgrCtCsr>34</QtPclPgrCtCsr>
+                </PclFutCsr>
+            </Opr>
+            
+            <!-- Operação 2 - Cartão de Crédito -->
+            <Opr>
+                <NrUnco>987654321</NrUnco>
+                <PrfAg>5678</PrfAg>
+                <NrCtr>1234567890</NrCtr>
+                <DtCtrc>2023-03-10</DtCtrc>
+                <CdMdld>002</CdMdld>
+                <DtAprc>2024-01-01</DtAprc>
+                <CnpjCtrc>12.345.678/0001-99</CnpjCtrc>
+                <CmdoOpr>A</CmdoOpr>
+                <IdfcCliCtrt>123.456.789-00</IdfcCliCtrt>
+                <TipRst>SEM_RESTRICAO</TipRst>
+                
+                <DetOpr>
+                    <InPreFix>S</InPreFix>
+                    <DtVnctUltPcl>2024-12-31</DtVnctUltPcl>
+                    <VlCtrdFut>10000.00</VlCtrdFut>
+                    <QtPcl>0</QtPcl>
+                    <NrPlstCrt>9876543210987654</NrPlstCrt>
+                    <SdoDvdr>3500.00</SdoDvdr>
+                    <DtVnctOpr>2024-12-31</DtVnctOpr>
+                </DetOpr>
+                
+                <FatFchdAnt>
+                    <DtVnctFatFchdAnt>2023-12-31</DtVnctFatFchdAnt>
+                    <VlTtlPgrFatFchdAnt>1200.00</VlTtlPgrFatFchdAnt>
+                    <VlMinPgrFatFchdAnt>120.00</VlMinPgrFatFchdAnt>
+                    <CmdoFatFchdAnt>I</CmdoFatFchdAnt>
+                    <PgtoFatFchdAnt>
+                        <DtPgtoFatFchdAnt>2023-12-31</DtPgtoFatFchdAnt>
+                        <VlPgtoFatFchdAnt>1200.00</VlPgtoFatFchdAnt>
+                    </PgtoFatFchdAnt>
+                </FatFchdAnt>
+                
+                <FchtAnt>
+                    <DtFchtAnt>2023-12-31</DtFchtAnt>
+                    <SdoUtlzFchtAnt>2800.00</SdoUtlzFchtAnt>
+                    <CmdoFchtAnt>I</CmdoFchtAnt>
+                </FchtAnt>
+                
+                <FchtAtu>
+                    <DtFchtAtu>2024-01-31</DtFchtAtu>
+                    <SdoUtlzFchtAtu>3500.00</SdoUtlzFchtAtu>
+                    <CmdoFchtAtu>I</CmdoFchtAtu>
+                </FchtAtu>
+            </Opr>
+        </Cli>
+        
+        <!-- Cliente 2 - Pessoa Jurídica -->
+        <Cli>
+            <TipCli>J</TipCli>
+            <IdfcCli>11.222.333/0001-44</IdfcCli>
+            <NmCli>Empresa XYZ Ltda</NmCli>
+            <NtzRlc>TITULAR</NtzRlc>
+            <CmdoCli>I</CmdoCli>
+            
+            <Opr>
+                <NrUnco>555666777</NrUnco>
+                <PrfAg>9999</PrfAg>
+                <NrCtr>5555666677</NrCtr>
+                <DtCtrc>2023-09-01</DtCtrc>
+                <CdMdld>003</CdMdld>
+                <DtAprc>2024-01-01</DtAprc>
+                <CnpjCtrc>12.345.678/0001-99</CnpjCtrc>
+                <CmdoOpr>I</CmdoOpr>
+                <IdfcCliCtrt>11.222.333/0001-44</IdfcCliCtrt>
+                <TipRst>SEM_RESTRICAO</TipRst>
+                
+                <DetOpr>
+                    <InPreFix>N</InPreFix>
+                    <DtVnctUltPcl>2026-09-01</DtVnctUltPcl>
+                    <VlCtrdFut>200000.00</VlCtrdFut>
+                    <QtPcl>36</QtPcl>
+                    <SdoDvdr>180000.00</SdoDvdr>
+                    <DtVnctOpr>2026-09-01</DtVnctOpr>
+                </DetOpr>
+                
+                <PclAnt>
+                    <DtVnctPclAnt>2023-10-01</DtVnctPclAnt>
+                    <PercPclAnt>MENSAL</PercPclAnt>
+                    <VlPclAnt>6000.00</VlPclAnt>
+                    <CmdoPclAnt>I</CmdoPclAnt>
+                    <PgtoPclAnt>
+                        <DtPgtoPclAnt>2023-10-01</DtPgtoPclAnt>
+                        <VlPgtoPclAnt>6000.00</VlPgtoPclAnt>
+                    </PgtoPclAnt>
+                </PclAnt>
+                
+                <PclFut>
+                    <DtVnctPrxPcl>2024-02-01</DtVnctPrxPcl>
+                    <PercPclFut>MENSAL</PercPclFut>
+                    <VlPrxPcl>6000.00</VlPrxPcl>
+                    <QtPclVncr>32</QtPclVncr>
+                    <QtPclPgr>32</QtPclPgr>
+                </PclFut>
+            </Opr>
+        </Cli>
+    </EnvoHstCrd>
